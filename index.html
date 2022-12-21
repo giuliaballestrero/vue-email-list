@@ -21,12 +21,9 @@
     <script src="https://kit.fontawesome.com/ad70f647da.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    
-
     <div  id="app">
         <header class="p-5 text-center container-fluid">
-            <h1 class="bg-dark text-light shadow"> 
+            <h1 class="bg-dark text-light shadow rounded"> 
                 Top 10 random email list:
             </h1>
         </header>
@@ -34,10 +31,11 @@
         <main>
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <p class="text-center pb-2" v-show="mailList.length === 10" v-for="(mail) in mailList">
-                            {{mail}}
-                        </p>
+                    <div id="box" class="col-lg-4 col-md-8 col-sm-12 m-auto rounded" v-show="mailList.length === 10">
+                        <div class="p-2 text-center text-light fw-bold d-lg-flex" v-for="(mail) in mailList">
+                            <p class="pe-2">Random mail:</p>
+                            <p>{{mail}}</p>
+                        </div>
                     </div>
                 </div>
             </div>

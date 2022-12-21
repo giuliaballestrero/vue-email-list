@@ -1,7 +1,20 @@
 body {
     font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-vector/silhouette-twilight-forest-landscape-background_1308-67749.jpg?w=1380&t=st=1671636729~exp=1671637329~hmac=de6a66e84fa2d8167f525abd062f481a604ebb4e3be5a2f0386851f6a8f2b9ea);
+    background-size: cover;
+    background-position: center;
+
 }   
+
+#box {
+    background-color: rgba(0, 0, 0, 0.158);
+}
 
 h1 {
     letter-spacing: .2rem;
+}
+
+p {
+    text-shadow: 1px 2px 2px #38195c;
 }
