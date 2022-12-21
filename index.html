@@ -35,9 +35,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="text-center pb-2">
-                            {{ randomMail }}
-                        </h2>
+                        <p class="text-center pb-2" v-show="mailList.length === 10" v-for="(mail) in mailList">
+                            {{mail}}
+                        </p>
                     </div>
                 </div>
             </div>
